@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:background="@color/colorPrimaryDark">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:text="Welcome to Twitter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twitter usernames always start with the @ symbol; for example, our Twitter name is @commonplaces. If you'd like to send a tweet to one user specifically, you can do so by starting the tweet with username. This is called an @reply. Other Twitter users will see this @reply on your profile page, however, so a truly private message should be sent as a Direct Message."
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn More"
+                />
+            <Button
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="join the club"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_person"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="USERNAME"
+            android:textColorHint="#2CA7E0"/>
+        <EditText
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_lock"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:textColorHint="#2CA7E0"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Login In"
+            android:textColor="#fff"
+            android:drawableRight="@drawable/ic_baseline_send_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trần Minh Khoa"
+            android:textColor="#2CA7E0"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:layout_marginRight="35dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
